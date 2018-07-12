@@ -1,37 +1,13 @@
-## Welcome to GitHub Pages
+## Author :Dr. Thyagaraju G S ,  Context Innovations Lab  
 
-You can use the [editor on GitHub](https://github.com/profthyagu/Python-Implementation-of-Find-S-/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+Problem : Implement and demonstrate the FIND-S algorithm for finding the most specific hypothesis based on a given set of training data samples. Read the training data from a .CSV file.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+### Algorithm : Find-S, a Maximally Specific Hypothesis Learning Algorithm
+Step1: Initialize h to the most specific hypothesis in H
+Step2: For each positive training instance x
+        For each attribute constraint ai in h
+	          If the constraint ai in h is satisfied by x  then do nothing
+            else replace ai in h by the next more general constraint that is satisfied by x
+Step3 : Output hypothesis h
 
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/profthyagu/Python-Implementation-of-Find-S-/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+# Reference : Machine Learning , Tom M Mitchell
